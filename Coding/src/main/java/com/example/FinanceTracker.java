@@ -8,7 +8,6 @@ import java.util.*;
 // Prompt 2: Gson imports for JSON persistence
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 import java.io.*;
 // Prompt 5: LocalDate TypeAdapter for Gson
 import com.google.gson.TypeAdapter;

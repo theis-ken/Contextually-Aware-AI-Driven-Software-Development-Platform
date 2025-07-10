@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SpendingLimit.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">finance-tracker</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">SpendingLimit.java</span></div><h1>SpendingLimit.java</h1><pre class="source lang-java linenums">package com.example;
+
+public class SpendingLimit {
+    private Category category;
+    private double monthlyLimit;
+    private double currentSpent;
+
+<span class="fc" id="L8">    public SpendingLimit(Category category, double monthlyLimit) {</span>
+<span class="fc" id="L9">        this.category = category;</span>
+<span class="fc" id="L10">        this.monthlyLimit = monthlyLimit;</span>
+<span class="fc" id="L11">        this.currentSpent = 0;</span>
+<span class="fc" id="L12">    }</span>
+
+<span class="fc" id="L14">    public Category getCategory() { return category; }</span>
+<span class="nc" id="L15">    public void setCategory(Category category) { this.category = category; }</span>
+
+<span class="fc" id="L17">    public double getMonthlyLimit() { return monthlyLimit; }</span>
+<span class="fc" id="L18">    public void setMonthlyLimit(double monthlyLimit) { this.monthlyLimit = monthlyLimit; }</span>
+
+<span class="fc" id="L20">    public double getCurrentSpent() { return currentSpent; }</span>
+<span class="fc" id="L21">    public void setCurrentSpent(double currentSpent) { this.currentSpent = currentSpent; }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

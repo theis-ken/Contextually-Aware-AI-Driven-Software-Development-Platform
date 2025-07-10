@@ -10,7 +10,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class MainApp extends Application {
     // Prompt 4: UI fields
