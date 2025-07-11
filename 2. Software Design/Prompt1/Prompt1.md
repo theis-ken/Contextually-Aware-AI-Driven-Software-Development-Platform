@@ -1,0 +1,1 @@
+Based on these User stories, acceptance criteria and formal requirements, propose class skeletons. 

@@ -1,0 +1,1 @@
+Please also explore architectural diagrams and design patterns.
