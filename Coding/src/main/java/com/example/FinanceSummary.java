@@ -1,7 +1,8 @@
+// Prompt 3: Moved to com.example package for Maven structure
 package com.example;
 
 import java.util.Map;
-
+//Prompt 1: Core logic
 public class FinanceSummary {
     private double totalIncome;
     private double totalExpenses;

@@ -1,15 +1,16 @@
-// Prompt 2: Moved to com.example package
+// Prompt 3: Moved to com.example package for Maven structure
 package com.example;
 
-// Prompt 1: Core logic and data model management
+//Prompt 1: Core logic
+
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.util.*;
-// Prompt 2: Gson imports for JSON persistence
+//Prompt 2: Data model management (Json)
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.*;
-// Prompt 5: LocalDate TypeAdapter for Gson
+// Prompt 4: LocalDate TypeAdapter for Gson
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
@@ -153,7 +154,7 @@ public class FinanceTracker {
 
     // Prompt 2: Persistence methods using Gson
     public void saveToFile(String filePath) {
-        // Prompt 5: Register LocalDate adapter
+        // Prompt 4: Register LocalDate adapter
         Gson gson = new GsonBuilder()
             .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
             .setPrettyPrinting().create();
@@ -166,7 +167,7 @@ public class FinanceTracker {
     }
 
     public void loadFromFile(String filePath) {
-        // Prompt 5: Register LocalDate adapter
+        // Prompt 4: Register LocalDate adapter
         Gson gson = new GsonBuilder()
             .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
             .create();
@@ -194,7 +195,7 @@ public class FinanceTracker {
         }
     }
 
-    // Prompt 5: LocalDate TypeAdapter for Gson
+    // Prompt 4: LocalDate TypeAdapter for Gson
     private static class LocalDateAdapter extends TypeAdapter<LocalDate> {
         @Override
         public void write(JsonWriter out, LocalDate value) throws IOException {

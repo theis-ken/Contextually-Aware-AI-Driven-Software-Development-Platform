@@ -1,8 +1,9 @@
-// Prompt 2: Moved to com.example package
+// Prompt 3: Moved to com.example package for Maven structure
 package com.example;
 
 import java.time.LocalDate;
 
+//Prompt 1: Core logic
 public class Transaction {
     private String description;
     private double amount;

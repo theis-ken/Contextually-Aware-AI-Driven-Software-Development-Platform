@@ -1,4 +1,4 @@
-// Prompt 4: JavaFX UI for FinanceTracker
+// Prompt 3: JavaFX UI for FinanceTracker
 package com.example;
 
 import javafx.application.Application;
@@ -12,7 +12,7 @@ import javafx.geometry.Insets;
 import java.time.LocalDate;
 
 public class MainApp extends Application {
-    // Prompt 4: UI fields
+    // Prompt 3: UI fields
     private FinanceTracker tracker = new FinanceTracker();
     private ObservableList<Transaction> transactionList = FXCollections.observableArrayList();
     private TableView<Transaction> table = new TableView<>();
@@ -20,7 +20,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // Prompt 4: Table setup
+        // Prompt 3: Table setup
         TableColumn<Transaction, String> descCol = new TableColumn<>("Description");
         descCol.setCellValueFactory(cell -> new javafx.beans.property.SimpleStringProperty(cell.getValue().getDescription()));
         TableColumn<Transaction, String> amountCol = new TableColumn<>("Amount");
@@ -35,7 +35,7 @@ public class MainApp extends Application {
         table.getColumns().addAll(descCol, amountCol, dateCol, typeCol, catCol);
         table.setItems(transactionList);
 
-        // Prompt 4: Controls for adding transactions
+        // Prompt 3: Controls for adding transactions
         TextField descField = new TextField(); descField.setPromptText("Description");
         TextField amountField = new TextField(); amountField.setPromptText("Amount");
         DatePicker datePicker = new DatePicker(LocalDate.now());
@@ -59,7 +59,7 @@ public class MainApp extends Application {
             }
         });
 
-        // Prompt 4: Remove transaction
+        // Prompt 3: Remove transaction
         Button removeBtn = new Button("Remove Selected");
         removeBtn.setOnAction(e -> {
             Transaction t = table.getSelectionModel().getSelectedItem();
@@ -69,7 +69,7 @@ public class MainApp extends Application {
             }
         });
 
-        // Prompt 4: Save/load buttons
+        // Prompt 3: Save/load buttons
         Button saveBtn = new Button("Save");
         saveBtn.setOnAction(e -> tracker.saveToFile(DATA_FILE));
         Button loadBtn = new Button("Load");
@@ -79,13 +79,13 @@ public class MainApp extends Application {
             catBox.setItems(FXCollections.observableArrayList(tracker.getCategories()));
         });
 
-        // Prompt 4: Layout
+        // Prompt 3: Layout
         HBox inputBox = new HBox(5, descField, amountField, datePicker, typeBox, catBox, addBtn);
         HBox actionBox = new HBox(5, removeBtn, saveBtn, loadBtn);
         VBox root = new VBox(10, table, inputBox, actionBox);
         root.setPadding(new Insets(10));
 
-        // Prompt 4: Initial load
+        // Prompt 3: Initial load
         tracker.loadFromFile(DATA_FILE);
         transactionList.setAll(tracker.getTransactions());
         catBox.setItems(FXCollections.observableArrayList(tracker.getCategories()));
@@ -95,7 +95,7 @@ public class MainApp extends Application {
         primaryStage.show();
     }
 
-    // Prompt 4: Utility for alerts
+    // Prompt 3: Utility for alerts
     private void showAlert(String msg) {
         Alert alert = new Alert(Alert.AlertType.ERROR, msg, ButtonType.OK);
         alert.showAndWait();
