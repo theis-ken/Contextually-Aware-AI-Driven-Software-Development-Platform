@@ -10,7 +10,7 @@ import java.util.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.*;
-// Prompt 4: LocalDate TypeAdapter for Gson
+// Prompt 5: LocalDate TypeAdapter for Gson
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
@@ -154,7 +154,7 @@ public class FinanceTracker {
 
     // Prompt 2: Persistence methods using Gson
     public void saveToFile(String filePath) {
-        // Prompt 4: Register LocalDate adapter
+        // Prompt 5: Register LocalDate adapter
         Gson gson = new GsonBuilder()
             .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
             .setPrettyPrinting().create();
@@ -167,7 +167,7 @@ public class FinanceTracker {
     }
 
     public void loadFromFile(String filePath) {
-        // Prompt 4: Register LocalDate adapter
+        // Prompt 5: Register LocalDate adapter
         Gson gson = new GsonBuilder()
             .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
             .create();
@@ -195,7 +195,7 @@ public class FinanceTracker {
         }
     }
 
-    // Prompt 4: LocalDate TypeAdapter for Gson
+    // Prompt 5: LocalDate TypeAdapter for Gson
     private static class LocalDateAdapter extends TypeAdapter<LocalDate> {
         @Override
         public void write(JsonWriter out, LocalDate value) throws IOException {

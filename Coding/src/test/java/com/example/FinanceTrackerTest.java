@@ -1,4 +1,4 @@
-// Prompt 5: Unit tests for FinanceTracker
+// Prompt 4: Unit tests for FinanceTracker
 package com.example;
 
 import org.junit.jupiter.api.*;

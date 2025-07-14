@@ -1,4 +1,4 @@
-// Prompt 5: Unit tests for SpendingLimit
+// Prompt 4: Unit tests for SpendingLimit
 package com.example;
 
 import org.junit.jupiter.api.Test;

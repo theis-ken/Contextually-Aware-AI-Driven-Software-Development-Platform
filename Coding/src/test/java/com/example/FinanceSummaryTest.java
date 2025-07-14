@@ -1,4 +1,4 @@
-// Prompt 5: Unit tests for FinanceSummary
+// Prompt 4: Unit tests for FinanceSummary
 package com.example;
 
 import org.junit.jupiter.api.Test;
