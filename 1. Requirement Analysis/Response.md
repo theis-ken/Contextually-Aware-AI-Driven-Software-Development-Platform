@@ -49,7 +49,7 @@ Acceptance Criteria:
 
 6. Set and Monitor Category Spending Limits
 [ ] User can set a monthly spending limit for any expense category.
-[ ] System warns the user when expenses in a category reach 80\% of the limit.
+[ ] System warns the user when expenses in a category reach 80% of the limit.
 [ ] System warns the user when the limit is exceeded.
 
 7. View Current Balance

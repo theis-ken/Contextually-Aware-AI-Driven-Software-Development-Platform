@@ -52,13 +52,18 @@ public class FinanceTracker {
     }
 
     public void setSpendingLimit(Category category, double limit) {
-        for (SpendingLimit sl : spendingLimits) {
-            if (sl.getCategory().equals(category)) {
-                sl.setMonthlyLimit(limit);
-                return;
-            }
+        // Remove existing limit for this category if it exists
+        spendingLimits.removeIf(sl -> sl.getCategory().equals(category));
+        
+        // Add new limit
+        if (limit > 0) {
+            spendingLimits.add(new SpendingLimit(category, limit));
         }
-        spendingLimits.add(new SpendingLimit(category, limit));
+    }
+    
+    // JavaFX update: Add method to remove spending limit
+    public void removeSpendingLimit(Category category) {
+        spendingLimits.removeIf(sl -> sl.getCategory().equals(category));
     }
 
     public FinanceSummary getMonthlySummary(YearMonth month) {
@@ -84,9 +89,23 @@ public class FinanceTracker {
     public List<Transaction> filterTransactions(LocalDate start, LocalDate end, Category category) {
         List<Transaction> filtered = new ArrayList<>();
         for (Transaction t : transactions) {
-            boolean inRange = (t.getDate().isEqual(start) || t.getDate().isAfter(start)) &&
-                              (t.getDate().isEqual(end) || t.getDate().isBefore(end));
-            boolean inCategory = (category == null) || t.getCategory().equals(category);
+            // JavaFX update: Fix null pointer issues with date filtering
+            boolean inRange = true;
+            if (start != null && end != null) {
+                inRange = (t.getDate().isEqual(start) || t.getDate().isAfter(start)) &&
+                          (t.getDate().isEqual(end) || t.getDate().isBefore(end));
+            } else if (start != null) {
+                inRange = t.getDate().isEqual(start) || t.getDate().isAfter(start);
+            } else if (end != null) {
+                inRange = t.getDate().isEqual(end) || t.getDate().isBefore(end);
+            }
+            
+            // JavaFX update: Fix null pointer issues with category filtering
+            boolean inCategory = true;
+            if (category != null) {
+                inCategory = t.getCategory() != null && t.getCategory().equals(category);
+            }
+            
             if (inRange && inCategory) {
                 filtered.add(t);
             }
@@ -177,9 +196,42 @@ public class FinanceTracker {
                 this.transactions = wrapper.transactions != null ? wrapper.transactions : new ArrayList<>();
                 this.categories = wrapper.categories != null ? wrapper.categories : new ArrayList<>();
                 this.spendingLimits = wrapper.spendingLimits != null ? wrapper.spendingLimits : new ArrayList<>();
+                
+                // JavaFX update: Link categories in transactions to the same objects in categories list
+                linkCategoriesInTransactions();
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+    
+    // JavaFX update: Link categories in transactions to the same objects in categories list
+    private void linkCategoriesInTransactions() {
+        for (Transaction transaction : transactions) {
+            if (transaction.getCategory() != null) {
+                // Find the matching category in the categories list
+                for (Category category : categories) {
+                    if (category.getName().equals(transaction.getCategory().getName()) && 
+                        category.getType() == transaction.getCategory().getType()) {
+                        // Replace the transaction's category with the one from the categories list
+                        transaction.setCategory(category);
+                        break;
+                    }
+                }
+            }
+        }
+        
+        // Also link categories in spending limits
+        for (SpendingLimit limit : spendingLimits) {
+            if (limit.getCategory() != null) {
+                for (Category category : categories) {
+                    if (category.getName().equals(limit.getCategory().getName()) && 
+                        category.getType() == limit.getCategory().getType()) {
+                        limit.setCategory(category);
+                        break;
+                    }
+                }
+            }
         }
     }
 

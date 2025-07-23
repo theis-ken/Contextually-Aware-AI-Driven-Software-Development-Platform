@@ -1,12 +1,892 @@
 {
   "transactions": [
     {
-      "description": "CarPayment",
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-01-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Freelance Web Design",
+      "amount": 900.0,
+      "date": "2024-01-28",
+      "type": "INCOME",
+      "category": {
+        "name": "Freelance",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 120.5,
+      "date": "2024-01-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bus Pass",
+      "amount": 45.0,
+      "date": "2024-01-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dinner with Friends",
+      "amount": 60.0,
+      "date": "2024-01-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Purchase",
+      "amount": 30.0,
+      "date": "2024-02-02",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-02-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 110.0,
+      "date": "2024-02-18",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Movie Night",
+      "amount": 32.0,
+      "date": "2024-02-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Gas Station",
+      "amount": 50.0,
+      "date": "2024-02-28",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-03-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 130.0,
+      "date": "2024-03-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 75.0,
+      "date": "2024-03-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Fair",
+      "amount": 45.0,
+      "date": "2024-03-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Concert",
+      "amount": 120.0,
+      "date": "2024-03-28",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Freelance App",
+      "amount": 1200.0,
+      "date": "2024-04-01",
+      "type": "INCOME",
+      "category": {
+        "name": "Freelance",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 140.0,
+      "date": "2024-04-10",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Train Ticket",
+      "amount": 60.0,
+      "date": "2024-04-12",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 80.0,
+      "date": "2024-04-15",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bookstore",
+      "amount": 25.0,
+      "date": "2024-04-18",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-04-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 150.0,
+      "date": "2024-05-05",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bus Pass",
+      "amount": 45.0,
+      "date": "2024-05-10",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 90.0,
+      "date": "2024-05-12",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Purchase",
+      "amount": 35.0,
+      "date": "2024-05-15",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Movie Night",
+      "amount": 40.0,
+      "date": "2024-05-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-05-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 160.0,
+      "date": "2024-06-10",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Taxi",
+      "amount": 30.0,
+      "date": "2024-06-12",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 85.0,
+      "date": "2024-06-15",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bookstore",
+      "amount": 28.0,
+      "date": "2024-06-18",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Concert",
+      "amount": 110.0,
+      "date": "2024-06-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-06-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 170.0,
+      "date": "2024-07-10",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bus Pass",
+      "amount": 45.0,
+      "date": "2024-07-12",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 95.0,
+      "date": "2024-07-15",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Purchase",
+      "amount": 40.0,
+      "date": "2024-07-18",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Movie Night",
+      "amount": 50.0,
+      "date": "2024-07-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-07-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Freelance Consulting",
+      "amount": 1000.0,
+      "date": "2024-08-01",
+      "type": "INCOME",
+      "category": {
+        "name": "Freelance",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 180.0,
+      "date": "2024-08-10",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Train Ticket",
+      "amount": 60.0,
+      "date": "2024-08-12",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
       "amount": 100.0,
-      "date": "2025-07-10",
+      "date": "2024-08-15",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bookstore",
+      "amount": 32.0,
+      "date": "2024-08-18",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Concert",
+      "amount": 115.0,
+      "date": "2024-08-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-08-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 190.0,
+      "date": "2024-09-10",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bus Pass",
+      "amount": 45.0,
+      "date": "2024-09-12",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 105.0,
+      "date": "2024-09-15",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Purchase",
+      "amount": 38.0,
+      "date": "2024-09-18",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Movie Night",
+      "amount": 55.0,
+      "date": "2024-09-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3500.0,
+      "date": "2024-09-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Investment Dividend",
+      "amount": 200.0,
+      "date": "2025-01-10",
+      "type": "INCOME",
+      "category": {
+        "name": "Investment",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 210.0,
+      "date": "2025-02-10",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 120.0,
+      "date": "2025-02-15",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Fair",
+      "amount": 60.0,
+      "date": "2025-02-18",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Concert",
+      "amount": 140.0,
+      "date": "2025-02-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3600.0,
+      "date": "2025-03-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 220.0,
+      "date": "2025-03-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 130.0,
+      "date": "2025-03-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bookstore",
+      "amount": 42.0,
+      "date": "2025-03-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Movie Night",
+      "amount": 60.0,
+      "date": "2025-03-28",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3600.0,
+      "date": "2025-04-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 230.0,
+      "date": "2025-04-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 140.0,
+      "date": "2025-04-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Purchase",
+      "amount": 50.0,
+      "date": "2025-04-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Concert",
+      "amount": 150.0,
+      "date": "2025-04-28",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3600.0,
+      "date": "2025-05-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 240.0,
+      "date": "2025-05-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 150.0,
+      "date": "2025-05-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bookstore",
+      "amount": 55.0,
+      "date": "2025-05-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Movie Night",
+      "amount": 65.0,
+      "date": "2025-05-28",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3600.0,
+      "date": "2025-06-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 250.0,
+      "date": "2025-06-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 160.0,
+      "date": "2025-06-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Book Purchase",
+      "amount": 60.0,
+      "date": "2025-06-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Concert",
+      "amount": 160.0,
+      "date": "2025-06-28",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Salary Payment",
+      "amount": 3600.0,
+      "date": "2025-07-15",
+      "type": "INCOME",
+      "category": {
+        "name": "Salary",
+        "type": "INCOME"
+      }
+    },
+    {
+      "description": "Grocery Shopping",
+      "amount": 260.0,
+      "date": "2025-07-20",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Dining Out",
+      "amount": 170.0,
+      "date": "2025-07-22",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Bookstore",
+      "amount": 65.0,
+      "date": "2025-07-25",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Books",
+        "type": "EXPENSE"
+      }
+    },
+    {
+      "description": "Movie Night",
+      "amount": 75.0,
+      "date": "2025-07-28",
+      "type": "EXPENSE",
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "Salary",
+      "type": "INCOME"
+    },
+    {
+      "name": "Freelance",
+      "type": "INCOME"
+    },
+    {
+      "name": "Investment",
+      "type": "INCOME"
+    },
+    {
+      "name": "Groceries",
+      "type": "EXPENSE"
+    },
+    {
+      "name": "Transportation",
+      "type": "EXPENSE"
+    },
+    {
+      "name": "Dining",
+      "type": "EXPENSE"
+    },
+    {
+      "name": "Books",
+      "type": "EXPENSE"
+    },
+    {
+      "name": "Entertainment",
       "type": "EXPENSE"
     }
   ],
-  "categories": [],
-  "spendingLimits": []
+  "spendingLimits": [
+    {
+      "category": {
+        "name": "Groceries",
+        "type": "EXPENSE"
+      },
+      "monthlyLimit": 300.0,
+      "currentSpent": 260.0
+    },
+    {
+      "category": {
+        "name": "Dining",
+        "type": "EXPENSE"
+      },
+      "monthlyLimit": 200.0,
+      "currentSpent": 170.0
+    },
+    {
+      "category": {
+        "name": "Entertainment",
+        "type": "EXPENSE"
+      },
+      "monthlyLimit": 250.0,
+      "currentSpent": 75.0
+    },
+    {
+      "category": {
+        "name": "Transportation",
+        "type": "EXPENSE"
+      },
+      "monthlyLimit": 100.0,
+      "currentSpent": 0.0
+    }
+  ]
 }
